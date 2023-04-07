@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Programming Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dynamic Programming Simulator</h1>
+    </header>
+
+    <main>
+        <div class="problem-select">
+            <h2>Select a problem to solve:</h2>
+            <select id="problem-select">
+                <option value="lcs">Longest Common Subsequence</option>
+                <option value="mcm">Matrix Chain Multiplication</option>
+                <option value="knapsack">0/1 Knapsack</option>
+            </select>
+        </div>
+
+        <div class="problem-container" id="lcs-container">
+            <h2>Longest Common Subsequence</h2>
+            <div class="input-container">
+                <label for="lcs-input-a">Sequence A:</label>
+                <input type="text" id="lcs-input-a">
+            </div>
+            <div class="input-container">
+                <label for="lcs-input-b">Sequence B:</label>
+                <input type="text" id="lcs-input-b">
+            </div>
+            <button id="lcs-solve-btn">Solve</button>
+            <div id="lcs-output"></div>
+        </div>
+
+        <div class="problem-container" id="mcm-container">
+            <h2>Matrix Chain Multiplication</h2>
+            <div class="input-container">
+                <label for="mcm-input">Enter matrix dimensions:</label>
+                <input type="text" id="mcm-input">
+            </div>
+            <button id="mcm-solve-btn">Solve</button>
+            <div id="mcm-output"></div>
+        </div>
+
+
+        </div>
+
+        <div class="problem-container" id="knapsack-container">
+            <h2>0/1 Knapsack</h2>
+            <div class="input-container">
+                <label for="knapsack-capacity">Capacity:</label>
+                <input type="text" id="knapsack-capacity">
+            </div>
+            <div class="input-container">
+                <label for="knapsack-items">Items:</label>
+                <textarea id="knapsack-items"></textarea>
+            </div>
+            <button id="knapsack-solve-btn">Solve</button>
+            <div id="knapsack-output"></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
